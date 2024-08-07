@@ -96,23 +96,34 @@ class BookStore {
 }
 
 
-class Book extends BookStore {
+class Book {
 
-	public $Features = [
-						"Field"=>	[ "Engineering" ],
-						"Name" 		=>	[ "Mechatronics" ],
-						"PublishingDate"   =>	[ "2016" ],
-						"Author"		=>	[ "Mohamed Osama" ]
-						],
-						[
-						"Field"=>	[ "Engineering" ],
-						"Name" 		=>	[ "Mechatronics" ],
-						"PublishingDate"   =>	[ "2016" ],
-						"Author"		=>	[ "Mohamed Osama" ]
-						];
-
+	public	$Field;
+	public  $Name;
+	public  $PublishingDate;
+	public  $Author;
+				
 }
 
 
+$Book1 = new Book();
+$Book1->Field="Engineering";
+$Book1->Name="Mechatronics";
+$Book1->PublishingDate="2016";
+$Book1->Author="Mohamed Osama";
 
+echo "<pre>";
+var_dump($Book1);
+echo "</pre>";
+
+
+$Book2 = new Book();
+$Book2->Field="Science";
+$Book2->Name="Physics";
+$Book2->PublishingDate="1800";
+$Book2->Author="Hassan";
+
+echo "<pre>";
+var_dump($Book2);
+echo "</pre>";
 
