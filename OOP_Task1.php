@@ -69,7 +69,7 @@ class BookStore {
  	public $availableBooks;
 
 
-	public function addBook($field, $name) {
+	public function addBook() {
 
 	    //$books[$field] = $name;
 	    array_push($books[$field], $name);
@@ -99,12 +99,20 @@ class BookStore {
 class Book extends BookStore {
 
 	public $Features = [
-						"Field"		=>	[ "Engineering" ],
+						"Field"=>	[ "Engineering" ],
+						"Name" 		=>	[ "Mechatronics" ],
+						"PublishingDate"   =>	[ "2016" ],
+						"Author"		=>	[ "Mohamed Osama" ]
+						],
+						[
+						"Field"=>	[ "Engineering" ],
 						"Name" 		=>	[ "Mechatronics" ],
 						"PublishingDate"   =>	[ "2016" ],
 						"Author"		=>	[ "Mohamed Osama" ]
 						];
 
 }
+
+
 
 
