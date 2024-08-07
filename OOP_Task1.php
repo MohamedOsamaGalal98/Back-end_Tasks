@@ -102,26 +102,25 @@ class Book {
 	public  $Name;
 	public  $PublishingDate;
 	public  $Author;
+
+	public function __construct($field, $name, $publishingdate, $author) {
+		$this->Field = $field;
+		$this->Name = $name;
+		$this->PublishingDate = $publishingdate;
+		$this->Author = $author;		
+	}
 				
 }
 
 
-$Book1 = new Book();
-$Book1->Field="Engineering";
-$Book1->Name="Mechatronics";
-$Book1->PublishingDate="2016";
-$Book1->Author="Mohamed Osama";
+$Book1 = new Book("Engineering","Mechatronics","2016","Mohamed Osama");
 
 echo "<pre>";
 var_dump($Book1);
 echo "</pre>";
 
 
-$Book2 = new Book();
-$Book2->Field="Science";
-$Book2->Name="Physics";
-$Book2->PublishingDate="1800";
-$Book2->Author="Hassan";
+$Book2 = new Book("Science","Physics","1800","Hassan");
 
 echo "<pre>";
 var_dump($Book2);
