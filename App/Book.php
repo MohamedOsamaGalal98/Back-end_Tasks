@@ -1,6 +1,6 @@
 <?php
 
-namespace Book;
+namespace App;
 
 class Book {
 	private $name;
@@ -19,7 +19,7 @@ class Book {
 	public function getName() {
 		return $this->name; 
 	}
-	
+
 	public function getBookData() {
 		echo '[ ';
 		echo 'Book Name : ' . $this->name . '<br>'; 

@@ -1,12 +1,22 @@
 <?php
 
 
-namespace BookStore;
+namespace App;
 
-class BookStore {
+ class BookStoreBranch {
 	private array $books;
 	private array $borrowedBooks;
 	private array $borrower;
+	private  $branchName;
+	private  $branchAddress;
+	private  $branchPhone;
+
+
+	public function __construct($branchName, $branchAddress, $branchPhone) {
+		$this->branchName = $branchName;
+		$this->branchAddress = $branchAddress;
+		$this->branchPhone = $branchPhone;
+	}
 
 	public function addBook($book) {
 		$this->books[] = $book;
@@ -39,4 +49,15 @@ class BookStore {
 			echo $borrower->getBorrowerName();
 		}
 	}
+
+	public function getBranchName() {
+	return $this->branchName;
+	}
+	
+	public function getBranchData() {
+	echo $this->branchName;
+	echo $this->branchAddress;
+	echo $this->branchPhone;
+	}
+
 }

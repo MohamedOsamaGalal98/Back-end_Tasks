@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Borrower;
+namespace App;
 
 class Borrower {
 
